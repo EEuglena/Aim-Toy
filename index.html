@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>에임 테스트</title>
+		<link
+			rel="shortcut icon"
+			href="https://fav.farm/🎯"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="description">
+			<h3>설명</h3>
+			<p>
+				두 가지 모드로 에임 정확도를 알아볼 수 있습니다.<br />
+				- 개수: 10초 동안 얼마나 많은 점을 클릭하는지 알아봅니다.<br />
+				- 정확도: 25개의 점을 얼마나 정확히 클릭하는지 알아봅니다.
+			</p>
+		</div>
+		<form id="mode">
+			<fieldset>
+				<div class="count">
+					<input
+						type="radio"
+						name="mode"
+						id="modeCount"
+						value="count"
+						checked
+					/>
+					<label for="modeCount">개수</label>
+				</div>
+				<div class="accuracy">
+					<input
+						type="radio"
+						name="mode"
+						id="modeAccuracy"
+						value="accuracy"
+					/>
+					<label for="modeAccuracy">정확도</label>
+				</div>
+			</fieldset>
+			<button type="submit">시작</button>
+		</form>
+
+		<div class="board">
+			<div class="point"></div>
+		</div>
+
+		<div class="score"></div>
+
+		<script src="./index.js"></script>
+	</body>
+</html>
